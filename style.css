@@ -1,0 +1,417 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.scrollable-element {
+  scrollbar-width: thin;
+}
+
+body{
+	background-color:#51A0C9;
+	margin:0px;
+}
+
+
+header {
+  position:fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  padding-top: 0px;
+  z-index: 1000;
+  background-color: #a0cde0;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  color: white;
+  line-height: 1;
+}
+
+footer{
+	
+  position:relative;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  margin-bottom: -26px;
+  z-index: 1000;
+  background-color: #a0cde0;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  color: white;
+  text-align: right;
+  line-height: 1;
+  
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  margin-bottom: -15px;
+  padding: 0px 160px;
+  display: flex;
+  background-color:#ffffff;
+  border-radius: 15px;
+
+}
+
+
+.menu li {
+
+	
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+  font-size: 8px;
+  color:#51A0C9;
+  text-align: left;
+white-space: nowrap;
+}
+
+
+.menu a, .dropdown-menu a {
+  text-decoration: none;
+  color: #333;
+  text-align: left;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #a0cde0;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-menu li {
+  padding: 8px 16px; 
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.single_day{
+font-family: 'Single Day', cursive;
+}
+
+h1, h2, h3, h4, h5, h6, h3 > a, p, li, nav, form, th, td {
+	font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+	padding-left:60px;
+	padding-right:60px;
+	text-align: center;
+	color:#FFFFFF;
+	font-size: auto;
+	line-height: 1.5;
+}
+
+h1{
+	font-size:clamp(24px, 3vw, 34px);
+}
+
+h2{
+	font-size:clamp(18px, 3vw, 24px);
+}
+
+h3{
+	font-size:clamp(16px, 3vw, 18.75px);
+}
+
+h4{
+	font-size:clamp(14px, 3vw, 17px);
+}
+	
+h5{
+	font-size:clamp(13px, 3vw, 13.5px)
+}
+
+h6{
+	font-size:clamp(9.5px, 3vw, 11.5px)
+}
+	
+p, li, div, span{
+	font-size:16px;
+}
+
+.imgborder{
+	margin-left:auto;
+	margin-right:auto;
+	border: 8px solid #ffffff;
+	border-radius: 25px;
+	overflow:hidden;
+	box-shadow:0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.float-left {
+	float: left;
+	margin-left: 2%;
+	margin-right: 3%;
+	border-radius: 25px;
+}
+
+.float-right {
+	float: right;
+	margin-left: 2%;
+	margin-right: 3%;
+	border-radius: 25px;
+}
+
+.clear {
+  clear: both;
+}
+
+.centerimg{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	overflow:hidden;
+	
+}
+.blank {
+	
+	width: 85% auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 20% auto;
+	background-color: #a0cde0;
+	border: 8px solid #ffffff;
+	border-radius: 25px;
+	overflow: hidden;
+	box-shadow:0 0 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.igblank{
+	width: 85% auto;
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 20% auto;
+	background-color: #ffffff;
+	border: 8px solid #ffffff;
+	border-radius: 25px;
+	overflow: auto;
+	box-shadow:0 0 20px rgba(0, 0, 0, 0.25);
+	
+}
+
+.igblank2{
+	width: 85% auto;
+	margin-left: 26%;
+	margin-right: 26%;
+	height: 20% auto;
+	background-color: #ffffff;
+	border: 0.05px solid #ffffff;
+	border-radius: 25px;
+	overflow: auto;
+	box-shadow:0 0 20px rgba(0, 0, 0, 0.25);
+	
+}
+
+.justtext {
+    text-align: justify;
+}
+
+.imgzoom {
+	overflow: hidden;
+	max-width: 100%;
+	position: relative;
+    transition: transform 0.3s ease;
+}
+
+.imgzoom:hover {
+	transform: scale(1.1);
+       
+}
+
+
+.contform form{
+	
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	
+}
+
+.contform label{
+	display: block;
+	margin-bottom: 10px;
+	color:#51A0C9;
+}
+       
+.contform input[type="text"], .contform textarea{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+	
+
+.contform input[type="submit"], .contform input[type="reset"], button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #a0cde0;
+            cursor: pointer;
+        }
+
+.contform input[type="submit"]:hover, .contform input[type="reset"]:hover, button:hover {
+            background-color: #51A0C9;
+        }
+		
+
+.table-container {
+            overflow-x: auto;
+        }
+		
+th, td {
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;	
+}
+
+.table-round {
+	overflow: hidden;
+	max-width: 100%;
+	position: relative;
+    transition: transform 0.3s ease;
+}
+
+.table-round:hover {
+	transform: scale(1.1);
+       
+}
+
+.table-round img {
+	width: 30%;
+	height: 30%;
+}
+
+.ig-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
+  justify-content: center;
+  grid-gap: 5px;
+}
+
+.ig-list2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 293px));
+  justify-content: center;
+  grid-gap: 5px;
+}
+
+.ig {
+  cursor: pointer;
+  position: relative;
+  display: block;*
+}
+
+.ig-image {
+  margin: 0;
+}
+
+.ig-image img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.ig-overlay {
+  background: rgba(0, 0, 0, .4);
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.ig:hover .ig-overlay {
+  display: flex;
+}
+
+.ig-title,
+.ig-price {
+  width: 80% auto;
+  margin: 5px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  .ig-list {
+    grid-gap: 3px;
+  }
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #a0cde0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+}
+
+.mySlides img {
+    width: 100%;
+}
+
+button{
+	margin-left:40%;
+	margin-right:40%;
+	font-family: 'Single Day', cursive;
+
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
